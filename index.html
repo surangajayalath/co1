@@ -1,15 +1,27 @@
 <html>
     <head>
+    	<title>Web App – Simple Interest Calculator</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     </head>
-    <body>
-        <h1>Simple Interest Calculator</h1>
+    <body class="body">
+  <div class="cal">
+        <h1 >Simple Interest Calculator</h1>
 <div class="main">
-        Amount <input type="tel"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
+        Amount <input class="mb-4" type="number"  id="principal">  <br/>
+        Rate <input class="mb-4" type="number"  id="rate">  <br/>
+        No. of Years:
+        <!--<input class="mb-4" type="number"  id="years">-->
 
+        <select  class="mb-4 " id="years">
+        	<option value="1">1</option>
+        	<option value="2">2</option>
+        	<option value="3">3</option>
+        	<option value="4">4</option>
+        	<option value="5">5</option>
+        </select>
+        <br>
         <button onclick="compute()">Compute Interest</button>
       
 <br><br>
@@ -19,5 +31,6 @@
 
 </div>
 <h2><span>&#169;</span> Everyone Can Get Rich</h2>
+</div>
     </body>
 </html>
